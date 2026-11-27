@@ -1,0 +1,408 @@
+# ============================================================
+#  ВЕРСТАК — каталог полезного софта
+#  Все ссылки и логотипы хранятся здесь, в source.txt.
+#  Сайт читает этот файл при загрузке страницы.
+# ============================================================
+#
+#  Формат строки:
+#  Название | Ссылка | Логотип (CDN) | Платформы | Лицензия | Описание
+#
+#  Платформы: win, mac, linux, web, android, ios, server, any
+#  Лицензия:  open, free, freemium, paid, guide
+#  Логотип:   прямой URL картинки. Можно оставить пустым —
+#             сайт нарисует буквы на цветной плашке.
+#
+#  Категории задаются строкой в квадратных скобках.
+#  Порядок категорий и строк = порядок на сайте.
+#  Комментарии начинаются с #.
+#
+#  Пример:
+#  Rufus | https://github.com/pbatard/rufus | https://example.com/rufus.png | win | open | Записывает загрузочные USB.
+#
+# ============================================================
+
+[Система]
+PowerToys | https://github.com/microsoft/PowerToys | https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBRY0umJKt.GQbXbqRe3O0.PrCqIycSiRdeGINYu7JT4eoliZlTCLH9987RHqdqCx_8OUYOnq7dk44xdlrH0wlbc-&format=source | win | open | FancyZones, PowerRename, Run, Color Picker и другие утилиты Microsoft для Windows.
+Mem Reduct | https://github.com/henrypp/memreduct | https://raw.githubusercontent.com/henrypp/memreduct/master/images/memreduct.png | win | open | Очищает оперативную память вручную и по расписанию. Живёт в трее.
+SophiApp | https://github.com/Sophia-Community/SophiApp | https://github.com/Sophia-Community.png?size=160 | win | open | Настройка Windows 10 и 11: телеметрия, приватность, интерфейс. Без ручной правки реестра.
+Win11Debloat | https://github.com/Raphire/Win11Debloat | https://upload.wikimedia.org/wikipedia/commons/e/e6/Windows_11_logo.svg | win | open | PowerShell-скрипт убирает встроенные приложения, рекламу и телеметрию Windows 11.
+Tron | https://github.com/bmrf/tron | https://github.com/bmrf.png?size=160 | win | open | Обслуживание Windows: очистка временных файлов, проверка диска, обновления, удаление мусора.
+TwinkleTray | https://github.com/xanderfrangos/twinkle-tray | https://raw.githubusercontent.com/xanderfrangos/twinkle-tray/master/src/assets/logo.png | win | open | Регулирует яркость внешних мониторов из трея. DDC/CI, расписание, горячие клавиши.
+Everything | https://www.voidtools.com/ | https://www.voidtools.com/Everything.ico | win | free | Поиск файлов по имени на NTFS за доли секунды. Индексирует диск один раз.
+EverythingToolbar | https://github.com/srwi/EverythingToolbar | https://raw.githubusercontent.com/srwi/EverythingToolbar/master/EverythingToolbar/Images/AppIcon.ico | win | open | Заменяет поиск в панели задач Windows на Everything.
+UniGetUI | https://github.com/Devolutions/UniGetUI | https://raw.githubusercontent.com/Devolutions/UniGetUI/main/media/icon.png | win | open | Графический клиент для winget, Scoop и Chocolatey: установка и обновление пакетов.
+Bulk Crap Uninstaller | https://github.com/Klocman/Bulk-Crap-Uninstaller | https://raw.githubusercontent.com/Klocman/Bulk-Crap-Uninstaller/master/source/BulkCrapUninstaller/Resources/logo.ico | win | open | Удаляет программы пачками и вычищает остатки из реестра и с диска.
+FanControl | https://github.com/Rem0o/FanControl.Releases | https://raw.githubusercontent.com/Rem0o/FanControl.Releases/master/Images/logo.gif | win | free | Кривые вентиляторов, привязка к датчикам, несколько профилей.
+LibreHardwareMonitor | https://github.com/LibreHardwareMonitor/LibreHardwareMonitor | https://github.com/LibreHardwareMonitor.png?size=160 | win | open | Температуры, напряжения, обороты и загрузка железа. Форк Open Hardware Monitor.
+HWiNFO | https://www.hwinfo.com/ | https://upload.wikimedia.org/wikipedia/commons/5/5c/Hwinfo_icon.svg | win | free | Подробный мониторинг датчиков и журналы. Есть портативная версия.
+CrystalDiskInfo | https://github.com/hiyohiyo/CrystalDiskInfo | https://raw.githubusercontent.com/hiyohiyo/CrystalDiskInfo/master/resA/DiskInfo.ico | win | open | S.M.A.R.T., температура и наработка SSD и HDD. Предупреждает о проблемах.
+CrystalDiskMark | https://github.com/hiyohiyo/CrystalDiskMark | https://raw.githubusercontent.com/hiyohiyo/CrystalDiskMark/master/res/DiskMark.ico | win | open | Скорость последовательного и случайного чтения и записи накопителя.
+BleachBit | https://github.com/bleachbit/bleachbit | https://github.com/bleachbit.png?size=160 | win,linux | open | Удаляет кэш, логи и временные файлы. Умеет затирать свободное место.
+Simplewall | https://github.com/henrypp/simplewall | https://raw.githubusercontent.com/henrypp/simplewall/master/images/simplewall.png | win | open | Файрвол поверх Windows Filtering Platform: правила для приложений без лишнего интерфейса.
+DDU | https://www.wagnardsoft.com/display-driver-uninstaller-DDU- | https://www.wagnardsoft.com/favicon.ico | win | free | Полностью удаляет драйверы видеокарт перед чистой установкой или сменой GPU.
+Sysinternals | https://learn.microsoft.com/en-us/sysinternals/ | https://learn.microsoft.com/favicon.ico | win | free | Process Explorer, Autoruns, TCPView и другие утилиты Microsoft для разбора Windows.
+AutoHotkey | https://github.com/AutoHotkey/AutoHotkey | https://cdn.simpleicons.org/autohotkey | win | open | Горячие клавиши, макросы и автоматизация действий в Windows.
+Flow Launcher | https://github.com/Flow-Launcher/Flow.Launcher | https://raw.githubusercontent.com/Flow-Launcher/Flow.Launcher/master/Artworks/Logo/logo.png | win | open | Лаунчер по Alt+Space: программы, файлы, калькулятор и поиск в интернете.
+Windhawk | https://github.com/ramensoftware/windhawk | https://windhawk.net/favicon.ico | win | open | Моды для Windows: правки проводника и панели задач без патчей системы.
+ExplorerPatcher | https://github.com/valinet/ExplorerPatcher | - | win | open | Возвращает привычные панель задач и меню Пуск в Windows 11.
+TrafficMonitor | https://github.com/zhongyang219/TrafficMonitor | - | win | open | Скорость сети, загрузка CPU и памяти в трее.
+WinUtil | https://github.com/ChrisTitusTech/winutil | - | win | open | Скрипт настройки Windows: твики, удаление приложений, установка программ.
+Rainmeter | https://github.com/rainmeter/rainmeter | https://cdn.simpleicons.org/rainmeter | win | open | Виджеты на рабочем столе: часы, погода, загрузка CPU и диска.
+GlazeWM | https://github.com/glzr-io/glazewm | https://github.com/glzr-io.png?size=160 | win | open | Тайловый менеджер окон для Windows в духе i3.
+OpenRGB | https://openrgb.org/ | https://icons.duckduckgo.com/ip3/openrgb.org.ico | win,mac,linux | open | Подсветка RGB от разных производителей в одном приложении.
+Uninstalr | https://uninstalr.com/ | https://icons.duckduckgo.com/ip3/uninstalr.com.ico | win | free | Удаляет программы вместе с остатками в реестре и на диске.
+Monitorian | https://github.com/emoacht/Monitorian | - | win | open | Яркость каждого монитора отдельно, из трея.
+System Informer | https://github.com/winsiderss/systeminformer | https://github.com/winsiderss.png?size=160 | win | open | Разбор процессов, потоков и соединений вместо штатного диспетчера задач.
+EarTrumpet | https://github.com/File-New-Project/EarTrumpet | https://github.com/File-New-Project.png?size=160 | win | open | Громкость каждого приложения отдельно, микшер в трее.
+Open-Shell | https://github.com/Open-Shell/Open-Shell-Menu | https://github.com/Open-Shell.png?size=160 | win | open | Возвращает классическое меню «Пуск» в Windows 10 и 11.
+TranslucentTB | https://github.com/TranslucentTB/TranslucentTB | https://github.com/TranslucentTB.png?size=160 | win | open | Полупрозрачная панель задач и управление её цветом.
+WinDynamicDesktop | https://github.com/t1m0thyj/WinDynamicDesktop | https://github.com/t1m0thyj.png?size=160 | win | open | Обои меняются в течение дня, как на macOS.
+Seelen UI | https://github.com/eythaann/Seelen-UI | https://github.com/eythaann.png?size=160 | win | open | Настраиваемая оболочка Windows: док, панель и тайлинг окон.
+Stacer | https://github.com/oguzhaninan/Stacer | https://github.com/oguzhaninan.png?size=160 | linux | open | Мониторинг и очистка системы Linux с наглядной панелью.
+EcoPaste | https://github.com/EcoPasteHub/EcoPaste | https://github.com/EcoPasteHub.png?size=160 | win,mac,linux | open | Менеджер буфера обмена с историей и поиском.
+AutoKey | https://github.com/autokey/autokey | https://github.com/autokey.png?size=160 | linux | open | Макросы и автоматизация действий для Linux и X11.
+
+[Установка и USB]
+Rufus | https://github.com/pbatard/rufus | https://raw.githubusercontent.com/pbatard/rufus/master/res/appstore/Images/Square44x44Logo.targetsize-256.png | win | open | Записывает загрузочные USB с Windows и Linux. Работает без установки.
+Ventoy | https://github.com/ventoy/Ventoy | https://github.com/ventoy.png?size=160 | win,linux | open | Мультизагрузочная флешка: копируйте ISO как обычные файлы, без перезаписи.
+balenaEtcher | https://github.com/balena-io/etcher | https://github.com/balena-io.png?size=160 | win,mac,linux | open | Простая запись образов на USB и SD-карты. Проверяет результат.
+Fedora Media Writer | https://github.com/FedoraQt/MediaWriter | https://cdn.simpleicons.org/fedora | win,mac,linux | open | Официальная утилита Fedora для записи Linux-образов на флешку.
+Raspberry Pi Imager | https://github.com/raspberrypi/rpi-imager | https://cdn.simpleicons.org/raspberrypi | win,mac,linux | open | Записывает Raspberry Pi OS и другие образы на SD-карту.
+USBImager | https://gitlab.com/bztsrc/usbimager | - | win,mac,linux | open | Простая запись образов на USB и SD. Один бинарник, без установки.
+Clonezilla | https://clonezilla.org/ | - | any | open | Клонирование дисков и разделов с загрузочной флешки.
+Rescuezilla | https://github.com/rescuezilla/rescuezilla | https://github.com/rescuezilla.png?size=160 | any | open | Графическая оболочка для Clonezilla: бэкап и восстановление.
+GParted | https://gparted.org/ | https://icons.duckduckgo.com/ip3/gparted.org.ico | linux | open | Разметка дисков с Live-USB: создать, удалить и переместить разделы.
+KDE Partition Manager | https://apps.kde.org/partitionmanager/ | https://github.com/KDE.png?size=160 | linux | open | Управление разделами и файловыми системами с понятным интерфейсом.
+
+[Файлы и бэкапы]
+7-Zip | https://github.com/ip7z/7zip | https://cdn.simpleicons.org/7zip | win,linux | open | Архиватор с 7z, ZIP, RAR и десятками других форматов. Высокая степень сжатия.
+NanaZip | https://github.com/M2Team/NanaZip | https://github.com/M2Team.png?size=160 | win | open | 7-Zip для Windows 11 с современным контекстным меню и тёмной темой.
+PeaZip | https://github.com/peazip/PeaZip | https://peazip.github.io/peazip.png | win,linux | open | Архиватор на 200+ форматов с шифрованием и разбиением архивов.
+LocalSend | https://github.com/localsend/localsend | https://cdn.simpleicons.org/localsend | win,mac,linux,android,ios | open | Передача файлов по локальной сети без облака и регистрации.
+Syncthing | https://github.com/syncthing/syncthing | https://cdn.simpleicons.org/syncthing | win,mac,linux | open | Непрерывная синхронизация папок между устройствами. Без центрального сервера.
+Rclone | https://github.com/rclone/rclone | https://github.com/rclone.png?size=160 | win,mac,linux | open | Синхронизация и бэкап в 70+ облачных хранилищ из командной строки.
+WinSCP | https://github.com/winscp/winscp | https://github.com/winscp.png?size=160 | win | open | SFTP, FTP и SCP-клиент для Windows с графическим интерфейсом.
+FileZilla | https://filezilla-project.org/ | https://cdn.simpleicons.org/filezilla | win,mac,linux | open | FTP и SFTP-клиент с очередью, сайт-менеджером и синхронизацией каталогов.
+qBittorrent | https://github.com/qbittorrent/qBittorrent | https://cdn.simpleicons.org/qbittorrent | win,mac,linux | open | Торрент-клиент без рекламы. Есть веб-интерфейс и планировщик.
+FreeFileSync | https://freefilesync.org/ | https://freefilesync.org/favicon.ico | win,mac,linux | open | Синхронизация и резервное копирование папок с наглядным сравнением.
+Duplicati | https://github.com/duplicati/duplicati | https://cdn.simpleicons.org/duplicati | win,mac,linux | open | Инкрементные бэкапы с шифрованием в облако и на диск.
+Restic | https://github.com/restic/restic | https://github.com/restic.png?size=160 | win,mac,linux | open | Быстрые дедуплицированные бэкапы с шифрованием. Один бинарник.
+Kopia | https://github.com/kopia/kopia | https://github.com/kopia.png?size=160 | win,mac,linux | open | Бэкапы с дедупликацией, шифрованием и политиками хранения. CLI и GUI.
+TestDisk & PhotoRec | https://github.com/cgsecurity/testdisk | https://github.com/cgsecurity.png?size=160 | win,mac,linux | open | Восстанавливает разделы и удалённые файлы с дисков и карт памяти.
+WinDirStat | https://github.com/windirstat/windirstat | https://github.com/windirstat.png?size=160 | win | open | Карта занятого места на диске: видно, что занимает гигабайты.
+WizTree | https://diskanalyzer.com/ | https://diskanalyzer.com/favicon.ico | win | free | Анализ диска через MFT — быстрее обычного сканирования.
+Czkawka | https://github.com/qarmin/czkawka | https://api.iconify.design/selfhst/czkawka.svg | win,mac,linux | open | Ищет дубликаты, похожие фото, пустые папки и большие файлы.
+Files | https://github.com/files-community/Files | https://cdn.simpleicons.org/files | win | open | Проводник с вкладками, тегами и современным интерфейсом.
+Double Commander | https://github.com/doublecmd/doublecmd | https://raw.githubusercontent.com/doublecmd/doublecmd/master/pixmaps/mainicon/alt/256px-dcfinal.png | win,mac,linux | open | Двухпанельный файловый менеджер с архивами и FTP.
+Far Manager | https://github.com/FarGroup/FarManager | https://github.com/FarGroup.png?size=160 | win | open | Консольный файловый менеджер с плагинами и макросами.
+OpenHashTab | https://github.com/namazso/OpenHashTab | https://raw.githubusercontent.com/namazso/OpenHashTab/master/OpenHashTab/OpenHashTab/icon.png | win | open | Считает хеши файлов прямо в свойствах проводника.
+dupeGuru | https://github.com/arsenetar/dupeguru | https://raw.githubusercontent.com/arsenetar/dupeguru/master/images/dgme_logo_128.png | win,mac,linux | open | Ищет дубликаты файлов и музыки по содержимому.
+QDirStat | https://github.com/shundhammer/qdirstat | - | linux | open | Карта папок по размеру: сразу видно, что занимает место.
+Meld | https://meldmerge.org/ | https://icons.duckduckgo.com/ip3/meldmerge.org.ico | win,mac,linux | open | Сравнение файлов, папок и Git-версий бок о бок.
+FreeCommander | https://freecommander.com/ | https://icons.duckduckgo.com/ip3/freecommander.com.ico | win | free | Двухпанельный проводник с вкладками и архивами.
+Borg Backup | https://github.com/borgbackup/borg | https://cdn.simpleicons.org/borgbackup | win,mac,linux | open | Дедуплицирующий бэкап с шифрованием и инкрементами.
+Timeshift | https://github.com/linuxmint/timeshift | https://github.com/linuxmint.png?size=160 | linux | open | Снимки системы, чтобы откатиться после неудачного обновления.
+TagSpaces | https://github.com/tagspaces/tagspaces | https://github.com/tagspaces.png?size=160 | win,mac,linux | open | Теги и заметки прямо в файлах, без базы данных.
+Filelight | https://github.com/KDE/filelight | https://github.com/KDE.png?size=160 | linux | open | Круговая диаграмма занятого места на диске.
+ArchiveBox | https://github.com/ArchiveBox/ArchiveBox | https://github.com/ArchiveBox.png?size=160 | server,win,mac,linux | open | Архив страниц и скриншотов из закладок и RSS.
+
+[Офис и текст]
+ONLYOFFICE | https://github.com/ONLYOFFICE/DesktopEditors | https://cdn.simpleicons.org/onlyoffice | win,mac,linux | open | Документы, таблицы и презентации с совместимостью с форматами Microsoft Office.
+LibreOffice | https://github.com/LibreOffice/core | https://cdn.simpleicons.org/libreoffice | win,mac,linux | open | Полный офисный пакет: Writer, Calc, Impress, Draw, Base и Math.
+SumatraPDF | https://github.com/sumatrapdfreader/sumatrapdf | https://github.com/sumatrapdfreader.png?size=160 | win | open | Быстрый просмотр PDF, EPUB, MOBI и комиксов. Без лишних панелей.
+Stirling-PDF | https://github.com/Stirling-Tools/Stirling-PDF | https://api.iconify.design/selfhst/stirling-pdf.svg | server,win,mac,linux | open | Локальный веб-инструмент для PDF: объединение, сжатие, OCR, подписи.
+Joplin | https://github.com/laurent22/joplin | https://cdn.simpleicons.org/joplin | win,mac,linux,android,ios | open | Заметки в Markdown с синхронизацией, шифрованием и плагинами.
+Obsidian | https://github.com/obsidianmd/obsidian-releases | https://cdn.simpleicons.org/obsidian | win,mac,linux,android,ios | free | Заметки в Markdown на локальных файлах. Граф связей и плагины.
+Logseq | https://github.com/logseq/logseq | https://cdn.simpleicons.org/logseq | win,mac,linux | open | База знаний в стиле outliner: заметки, задачи и связи между страницами.
+Anytype | https://github.com/anyproto/anytype-ts | https://cdn.simpleicons.org/anytype | win,mac,linux | open | Локальная зашифрованная база знаний с совместной работой.
+Zotero | https://github.com/zotero/zotero | https://cdn.simpleicons.org/zotero | win,mac,linux | open | Менеджер библиографии: собирает источники, цитаты и PDF.
+LanguageTool | https://github.com/languagetool-org/languagetool | https://cdn.simpleicons.org/languagetool | win,mac,linux,web | open | Проверка орфографии, грамматики и стиля на 30+ языках.
+stop-slop | https://github.com/hardikpandya/stop-slop |  | any | guide | Правила, по которым текст перестаёт звучать как сгенерированный.
+unslop | https://github.com/heydamir/unslop |  | any | guide | Набор инструкций для редакторов и LLM: убрать штампы и канцелярит.
+Vale | https://github.com/errata-ai/vale | https://vale.sh/favicon.ico | win,mac,linux | open | Линтер для документации и текстов: свои правила и проверка в CI.
+Harper | https://github.com/Automattic/harper | https://writewithharper.com/apple-touch-icon.png | win,mac,linux | open | Быстрая проверка грамматики на Rust. Работает локально.
+Zettlr | https://github.com/Zettlr/Zettlr | https://www.zettlr.com/themes/zettlr/assets/img/256x256.png | win,mac,linux | open | Markdown-редактор для научных текстов и заметок со ссылками.
+FocusWriter | https://github.com/gottcode/focuswriter | https://gottcode.org/focuswriter/icon192.png | win,mac,linux | open | Текстовый редактор без отвлечений: только страница и счётчик слов.
+Notepad++ | https://github.com/notepad-plus-plus/notepad-plus-plus | https://cdn.simpleicons.org/notepadplusplus | win | open | Редактор кода и текста с подсветкой, макросами и плагинами.
+Calibre | https://github.com/kovidgoyal/calibre | https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png | win,mac,linux | open | Библиотека книг: конвертация форматов, редактор и читалка.
+Anki | https://github.com/ankitects/anki | https://cdn.simpleicons.org/anki | win,mac,linux,android,ios | open | Флеш-карточки с интервальным повторением для учёбы.
+Pandoc | https://github.com/jgm/pandoc | https://cdn.simpleicons.org/pandoc | win,mac,linux | open | Конвертирует Markdown, DOCX, PDF, LaTeX и ещё десятки форматов.
+Typst | https://github.com/typst/typst | https://cdn.simpleicons.org/typst | win,mac,linux,web | open | Вёрстка документов кодом. Быстрее LaTeX, с понятным синтаксисом.
+Scribus | https://github.com/scribusproject/scribus | https://github.com/scribusproject.png?size=160 | win,mac,linux | open | Вёрстка буклетов, журналов и PDF для печати.
+Kiwix | https://github.com/kiwix/kiwix-desktop | https://cdn.simpleicons.org/kiwix | win,mac,linux,android | open | Офлайн-Википедия и другие справочники без интернета.
+Xournal++ | https://github.com/xournalpp/xournalpp | https://github.com/xournalpp.png?size=160 | win,mac,linux | open | Рукописные заметки и пометки в PDF пером или мышью.
+PDF Arranger | https://github.com/pdfarranger/pdfarranger | https://github.com/pdfarranger.png?size=160 | win,mac,linux | open | Собирает, режет и поворачивает страницы PDF мышью.
+draw.io Desktop | https://github.com/jgraph/drawio-desktop | https://cdn.simpleicons.org/diagramsdotnet | win,mac,linux | open | Схемы, блок-схемы и диаграммы без регистрации.
+MarkText | https://github.com/marktext/marktext | https://github.com/marktext.png?size=160 | win,mac,linux | open | Редактор Markdown с живым предпросмотром и экспортом.
+AppFlowy | https://github.com/AppFlowy-IO/AppFlowy | https://github.com/AppFlowy-IO.png?size=160 | win,mac,linux | open | Документы, базы данных и доски вместо Notion, данные локально.
+Trilium Notes | https://github.com/zadam/trilium | https://github.com/zadam.png?size=160 | win,mac,linux,server | open | Дерево заметок с шифрованием и синхронизацией через свой сервер.
+SiYuan | https://github.com/siyuan-note/siyuan | https://github.com/siyuan-note.png?size=160 | win,mac,linux,android,ios | open | Блочные заметки в духе Notion, файлы хранятся локально.
+Memos | https://github.com/usememos/memos | https://github.com/usememos.png?size=160 | server,win,mac,linux | open | Короткие мысли в ленте, со своим сервером.
+KOReader | https://github.com/koreader/koreader | https://github.com/koreader.png?size=160 | linux,android | open | Читалка книг с настройкой шрифтов и синхронизацией прогресса.
+Okular | https://github.com/KDE/okular | https://github.com/KDE.png?size=160 | win,mac,linux | open | Просмотр PDF, EPUB и других документов с пометками.
+Freeplane | https://github.com/freeplane/freeplane | https://github.com/freeplane.png?size=160 | win,mac,linux | open | Карты мыслей со ссылками, задачами и иконками.
+
+[Графика]
+Krita | https://github.com/KDE/krita | https://cdn.simpleicons.org/krita | win,mac,linux | open | Цифровая живопись и рисование: кисти, слои, раскадровка, анимация.
+GIMP | https://github.com/GNOME/gimp | https://cdn.simpleicons.org/gimp | win,mac,linux | open | Растровый редактор для ретуши, композитинга и подготовки графики.
+Inkscape | https://github.com/inkscape/inkscape | https://cdn.simpleicons.org/inkscape | win,mac,linux | open | Векторный редактор SVG: иллюстрации, иконки, схемы.
+Blender | https://github.com/blender/blender | https://cdn.simpleicons.org/blender | win,mac,linux | open | 3D-моделирование, анимация, рендер и монтаж в одном пакете.
+ImageGlass | https://github.com/d2phap/ImageGlass | https://raw.githubusercontent.com/d2phap/ImageGlass/develop/source/__assets/__app/_themes/Kobe-Light/logo.svg | win | open | Лёгкий просмотрщик изображений с RAW, GIF и быстрым переключением.
+ShareX | https://github.com/ShareX/ShareX | https://cdn.simpleicons.org/sharex | win | open | Скриншоты, запись экрана, OCR и автозагрузка по горячим клавишам.
+Flameshot | https://github.com/flameshot-org/flameshot | https://github.com/flameshot-org.png?size=160 | win,mac,linux | open | Скриншоты с аннотациями, стрелками и быстрой отправкой.
+Greenshot | https://github.com/greenshot/greenshot | https://github.com/greenshot.png?size=160 | win | open | Скриншоты для Windows: редактор, экспорт и горячие клавиши.
+ScreenToGif | https://github.com/NickeManarin/ScreenToGif | https://nickemanarin.github.io/ScreenToGif-Website/logos/ms-icon-144x144.png | win | open | Запись экрана в GIF и видео с покадровым редактированием.
+QuickLook | https://github.com/QL-Win/QuickLook | https://cdn.simpleicons.org/quicklook | win | open | Просмотр файлов по пробелу, как в macOS.
+FreeCAD | https://github.com/FreeCAD/FreeCAD | https://cdn.simpleicons.org/freecad | win,mac,linux | open | Параметрическое 3D-моделирование для инженерии и печати.
+Paint.NET | https://www.getpaint.net/ | https://www.getpaint.net/favicon.ico | win | free | Растровый редактор со слоями, эффектами и плагинами.
+darktable | https://github.com/darktable-org/darktable | https://github.com/darktable-org.png?size=160 | win,mac,linux | open | Обработка RAW и каталог фотографий без подписки.
+Upscayl | https://github.com/upscayl/upscayl | https://github.com/upscayl.png?size=160 | win,mac,linux | open | Увеличивает изображения нейросетью локально, без облака.
+FontForge | https://github.com/fontforge/fontforge | https://cdn.simpleicons.org/fontforge | win,mac,linux | open | Редактор шрифтов: глифы, кернинг, экспорт TTF и OTF.
+Penpot | https://github.com/penpot/penpot | https://cdn.simpleicons.org/penpot | web,win,mac,linux | open | Дизайн интерфейсов и прототипы в браузере, без подписки.
+RawTherapee | https://github.com/RawTherapee/RawTherapee | https://github.com/RawTherapee.png?size=160 | win,mac,linux | open | Проявка RAW с тонкой настройкой цвета и шумов.
+digiKam | https://github.com/KDE/digikam | https://github.com/KDE.png?size=160 | win,mac,linux | open | Каталог фотографий с тегами, лицами и поиском.
+XnView MP | https://www.xnview.com/en/xnviewmp/ | https://icons.duckduckgo.com/ip3/xnview.com.ico | win,mac,linux | free | Просмотр и конвертация сотен форматов картинок.
+Caesium | https://github.com/Lymphatus/caesium-image-compressor | - | win,mac,linux | open | Сжимает PNG и JPEG пачкой, сохраняя качество.
+Pixelorama | https://github.com/Orama-Interactive/Pixelorama | https://github.com/Orama-Interactive.png?size=160 | win,mac,linux,web | open | Пиксель-арт и спрайты со слоями и анимацией.
+LibreCAD | https://github.com/LibreCAD/LibreCAD | https://github.com/LibreCAD.png?size=160 | win,mac,linux | open | 2D-чертежи и планы в форматах DXF и SVG.
+Solvespace | https://github.com/solvespace/solvespace | https://github.com/solvespace.png?size=160 | win,mac,linux | open | Параметрические 3D-детали с точными размерами.
+OpenSCAD | https://github.com/openscad/openscad | https://cdn.simpleicons.org/openscad | win,mac,linux | open | Модели для 3D-печати, описанные кодом.
+PrusaSlicer | https://github.com/prusa3d/PrusaSlicer | https://github.com/prusa3d.png?size=160 | win,mac,linux | open | Подготовка моделей к печати и настройка материалов.
+Excalidraw | https://github.com/excalidraw/excalidraw | https://cdn.simpleicons.org/excalidraw | web,win,mac,linux | open | Схемы «от руки» в браузере, без регистрации.
+Nomacs | https://github.com/nomacs/nomacs | https://github.com/nomacs.png?size=160 | win,mac,linux | open | Просмотр картинок и сравнение двух изображений рядом.
+
+[Медиа и звук]
+VLC | https://github.com/videolan/vlc | https://cdn.simpleicons.org/vlcmediaplayer | win,mac,linux | open | Проигрывает почти любое видео, аудио, диски и сетевые потоки.
+mpv | https://github.com/mpv-player/mpv | https://cdn.simpleicons.org/mpv | win,mac,linux | open | Минималистичный плеер с мощной настройкой и аппаратным ускорением.
+OBS Studio | https://github.com/obsproject/obs-studio | https://cdn.simpleicons.org/obsstudio | win,mac,linux | open | Запись экрана и стриминг: сцены, источники, фильтры.
+HandBrake | https://github.com/HandBrake/HandBrake | https://github.com/HandBrake.png?size=160 | win,mac,linux | open | Транскодирование видео в H.264, H.265 и AV1 с пресетами.
+Audacity | https://github.com/audacity/audacity | https://cdn.simpleicons.org/audacity | win,mac,linux | open | Запись и редактирование звука: шумоподавление, нормализация, экспорт.
+Kdenlive | https://github.com/KDE/kdenlive | https://cdn.simpleicons.org/kdenlive | win,mac,linux | open | Нелинейный видеомонтаж с эффектами, титрами и многодорожечным звуком.
+FXSound | https://www.fxsound.com/ | https://icons.duckduckgo.com/ip3/www.fxsound.com.ico | win | free | Улучшение звука Windows: эквалайзер, басы, громкость, профили.
+Equalizer APO | https://sourceforge.net/projects/equalizerapo/ |  | win | open | Системный эквалайзер и обработка звука для Windows.
+MusicBee | https://getmusicbee.com/ | https://getmusicbee.com/img/mb_icon_touch.png | win | free | Аудиоплеер и библиотека с тегами, обложками и синхронизацией.
+foobar2000 | https://www.foobar2000.org/ | https://cdn.simpleicons.org/foobar2000 | win | free | Модульный аудиоплеер с поддержкой lossless и компонентов.
+yt-dlp | https://github.com/yt-dlp/yt-dlp | https://github.com/yt-dlp.png?size=160 | win,mac,linux | open | Скачивание видео и аудио с сотен сайтов из командной строки.
+JDownloader | https://jdownloader.org/ | https://upload.wikimedia.org/wikipedia/commons/f/f7/Jdownloader.png | win,mac,linux | open | Загрузчик файлов с сайтов, хостингов и потоковых сервисов.
+Shotcut | https://github.com/mltframework/shotcut | https://github.com/mltframework.png?size=160 | win,mac,linux | open | Видеомонтаж с поддержкой множества форматов и кодеков.
+LosslessCut | https://github.com/mifi/lossless-cut | https://raw.githubusercontent.com/mifi/lossless-cut/master/src/renderer/src/icon.svg | win,mac,linux | open | Режет видео и аудио без перекодирования. Без потери качества.
+MKVToolNix | https://gitlab.com/mbunkus/mkvtoolnix | - | win,mac,linux | open | Работа с MKV: дорожки, субтитры, главы и перепаковка.
+Kodi | https://github.com/xbmc/xbmc | https://cdn.simpleicons.org/kodi | win,mac,linux,android | open | Медиацентр для фильмов, музыки и ТВ на большом экране.
+MPC-HC | https://github.com/clsid2/mpc-hc | - | win | open | Лёгкий видеоплеер на Media Foundation и LAV Filters.
+Strawberry | https://github.com/strawberrymusicplayer/strawberry | https://github.com/strawberrymusicplayer.png?size=160 | win,mac,linux | open | Музыкальный плеер с библиотекой и скробблингом.
+MuseScore | https://github.com/musescore/MuseScore | https://github.com/musescore.png?size=160 | win,mac,linux | open | Ноты: набор, прослушивание и экспорт в PDF и MIDI.
+FFmpeg | https://github.com/FFmpeg/FFmpeg | https://cdn.simpleicons.org/ffmpeg | win,mac,linux | open | Конвертация и обработка видео и звука из командной строки.
+Subtitle Edit | https://github.com/SubtitleEdit/subtitleedit | https://cdn.simpleicons.org/subtitleedit | win | open | Правка субтитров, синхронизация и распознавание речи.
+DaVinci Resolve | https://www.blackmagicdesign.com/products/davinciresolve | https://cdn.simpleicons.org/davinciresolve | win,mac,linux | free | Монтаж, цветокоррекция и звук в одной программе.
+SMPlayer | https://github.com/smplayer-dev/smplayer | https://github.com/smplayer-dev.png?size=160 | win,mac,linux | open | Плеер на базе mpv, запоминает позицию и подхватывает субтитры.
+IINA | https://github.com/iina/iina | https://github.com/iina.png?size=160 | mac | open | Видеоплеер для macOS на базе mpv.
+Ardour | https://github.com/Ardour/ardour | https://cdn.simpleicons.org/ardour | win,mac,linux | open | Запись и сведение музыки с дорожками и плагинами.
+LMMS | https://github.com/LMMS/lmms | https://cdn.simpleicons.org/lmms | win,mac,linux | open | Секвенсор и синтезаторы для музыки без подписки.
+Aegisub | https://github.com/Aegisub/Aegisub | https://github.com/Aegisub.png?size=160 | win,mac,linux | open | Тайминги и стили субтитров с покадровым просмотром.
+
+[Сеть и удалённый доступ]
+RustDesk | https://github.com/rustdesk/rustdesk | https://cdn.simpleicons.org/rustdesk | win,mac,linux,android,ios | open | Удалённый рабочий стол с открытым кодом и своим сервером.
+Sunshine | https://github.com/LizardByte/Sunshine | https://api.iconify.design/selfhst/sunshine.svg | win,mac,linux | open | Стриминг игр с ПК на клиенты Moonlight: низкая задержка, HDR.
+Moonlight | https://github.com/moonlight-stream/moonlight-qt | https://github.com/moonlight-stream.png?size=160 | win,mac,linux | open | Клиент для стриминга игр с NVIDIA GameStream и Sunshine.
+Tailscale | https://github.com/tailscale/tailscale | https://cdn.simpleicons.org/tailscale | win,mac,linux,android,ios | open | Mesh-VPN на WireGuard: доступ к своим устройствам из любой сети.
+WireGuard | https://github.com/WireGuard/wireguard-windows | https://cdn.simpleicons.org/wireguard | win,mac,linux | open | Быстрый VPN-протокол и официальный клиент для Windows.
+ZeroTier | https://github.com/zerotier/ZeroTierOne | https://cdn.simpleicons.org/zerotier | win,mac,linux | free | Виртуальная сеть уровня 2 между устройствами через интернет.
+Wireshark | https://github.com/wireshark/wireshark | https://cdn.simpleicons.org/wireshark | win,mac,linux | open | Разбор сетевого трафика: пакеты, протоколы, фильтры.
+Nmap | https://github.com/nmap/nmap | https://github.com/nmap.png?size=160 | win,mac,linux | open | Сканирование сети, портов и сервисов. Есть GUI Zenmap.
+PuTTY | https://www.putty.org/ | https://api.iconify.design/selfhst/putty.svg | win | open | SSH и Telnet-клиент для Windows. Небольшой и без зависимостей.
+Remmina | https://github.com/FreeRDP/Remmina | https://api.iconify.design/selfhst/remmina.svg | linux | open | RDP, VNC и SSH-клиент для Linux с вкладками.
+AnyDesk | https://anydesk.com/ | https://cdn.simpleicons.org/anydesk | win,mac,linux,android,ios | freemium | Удалённый доступ к компьютеру с низкой задержкой.
+Angry IP Scanner | https://github.com/angryip/ipscan | https://raw.githubusercontent.com/angryip/ipscan/master/resources/images/icon.png | win,mac,linux | open | Сканирует адреса и порты в локальной сети.
+Transmission | https://github.com/transmission/transmission | https://cdn.simpleicons.org/transmission | win,mac,linux | open | Лёгкий торрент-клиент без рекламы.
+KDE Connect | https://github.com/KDE/kdeconnect-kde | https://github.com/KDE.png?size=160 | win,mac,linux,android | open | Связывает телефон и компьютер: файлы, буфер, уведомления.
+NetBird | https://github.com/netbirdio/netbird | https://github.com/netbirdio.png?size=160 | win,mac,linux,android,ios | open | Приватная сеть между устройствами на WireGuard.
+Deluge | https://github.com/deluge-torrent/deluge | https://cdn.simpleicons.org/deluge | win,mac,linux | open | Торрент-клиент с веб-интерфейсом и плагинами.
+Sniffnet | https://github.com/GyulyVGC/sniffnet | - | win,mac,linux | open | Показывает, с кем общается компьютер, в реальном времени.
+cloudflared | https://github.com/cloudflare/cloudflared | https://cdn.simpleicons.org/cloudflare | win,mac,linux,server | open | Туннель к локальному сервису без открытых портов.
+mitmproxy | https://github.com/mitmproxy/mitmproxy | https://github.com/mitmproxy.png?size=160 | win,mac,linux | open | Перехват HTTP и HTTPS-трафика в консоли и вебе.
+LibreSpeed | https://github.com/librespeed/speedtest | https://github.com/librespeed.png?size=160 | server,web | open | Свой сервер замера скорости интернета без рекламы.
+
+[Безопасность и приватность]
+KeePassXC | https://github.com/keepassxreboot/keepassxc | https://cdn.simpleicons.org/keepassxc | win,mac,linux | open | Локальный менеджер паролей в формате KeePass. Без облака.
+Bitwarden | https://github.com/bitwarden/clients | https://cdn.simpleicons.org/bitwarden | win,mac,linux,android,ios | open | Менеджер паролей с синхронизацией, расширениями и self-host.
+VeraCrypt | https://github.com/veracrypt/VeraCrypt | https://github.com/veracrypt.png?size=160 | win,mac,linux | open | Шифрование дисков и контейнеров. Правопреемник TrueCrypt.
+Cryptomator | https://github.com/cryptomator/cryptomator | https://cdn.simpleicons.org/cryptomator | win,mac,linux,android,ios | open | Шифрует файлы перед загрузкой в облако. Прозрачный доступ.
+Signal | https://github.com/signalapp/Signal-Desktop | https://cdn.simpleicons.org/signal | win,mac,linux,android,ios | open | Мессенджер со сквозным шифрованием и минимумом метаданных.
+Tor Browser | https://www.torproject.org/ | https://cdn.simpleicons.org/torproject | win,mac,linux | open | Браузер с маршрутизацией через Tor и защитой от отпечатков.
+Mullvad VPN | https://github.com/mullvad/mullvadvpn-app | https://cdn.simpleicons.org/mullvad | win,mac,linux | open | VPN с оплатой без аккаунта и аудитом инфраструктуры.
+Proton VPN | https://protonvpn.com/ | https://cdn.simpleicons.org/protonvpn | win,mac,linux,android,ios | open | VPN с бесплатным тарифом и клиентами с открытым кодом.
+Gpg4win | https://www.gpg4win.org/ | https://www.gpg4win.org/favicon.png | win | open | OpenPGP для Windows: шифрование почты и файлов, подписи.
+Portmaster | https://github.com/safing/portmaster | https://github.com/safing.png?size=160 | win,linux | open | Контроль сетевых соединений приложений и блокировка трекеров.
+Aegis Authenticator | https://github.com/beemdevelopment/Aegis | https://raw.githubusercontent.com/beemdevelopment/Aegis/master/metadata/en-US/images/icon.png | android | open | Двухфакторные коды в зашифрованном хранилище. Экспорт и бэкап.
+Sandboxie Plus | https://github.com/sandboxie-plus/Sandboxie | https://github.com/sandboxie-plus.png?size=160 | win | open | Запускает программы в изолированной песочнице.
+OpenVPN | https://github.com/OpenVPN/openvpn | https://cdn.simpleicons.org/openvpn | win,mac,linux | open | VPN-сервер и клиент на открытом протоколе.
+SimpleX Chat | https://github.com/simplex-chat/simplex-chat | https://cdn.simpleicons.org/simplex | win,mac,linux,android,ios | open | Мессенджер без аккаунтов и идентификаторов.
+Ente Auth | https://github.com/ente-io/ente | https://cdn.simpleicons.org/ente | win,mac,linux,android,ios,web | open | Двухфакторные коды с шифрованием и синхронизацией.
+ClamAV | https://github.com/Cisco-Talos/clamav | https://github.com/Cisco-Talos.png?size=160 | win,mac,linux | open | Антивирусный сканер для почты, файлов и серверов.
+ShutUp10 | https://www.oo-software.com/en/shutup10 | https://icons.duckduckgo.com/ip3/oo-software.com.ico | win | free | Отключает телеметрию и рекламу в Windows 10 и 11.
+DNSCrypt-proxy | https://github.com/DNSCrypt/dnscrypt-proxy | https://github.com/DNSCrypt.png?size=160 | win,mac,linux | open | Шифрует DNS-запросы и блокирует рекламу.
+Yubico Authenticator | https://github.com/Yubico/yubioath-flutter | https://cdn.simpleicons.org/yubico | win,mac,linux,android,ios | open | Коды 2FA хранятся на ключе YubiKey, а не в телефоне.
+One Time Secret | https://github.com/onetimesecret/onetimesecret | https://github.com/onetimesecret.png?size=160 | server,web | open | Секрет передаётся ссылкой, которая исчезает после прочтения.
+
+[Общение]
+Thunderbird | https://www.thunderbird.net/ | https://cdn.simpleicons.org/thunderbird | win,mac,linux | open | Почтовый клиент с календарём, шифрованием и расширениями.
+Element | https://github.com/element-hq/element-web | https://cdn.simpleicons.org/element | win,mac,linux,web,android,ios | open | Мессенджер на Matrix: свои серверы и сквозное шифрование.
+Telegram | https://github.com/telegramdesktop/tdesktop | https://cdn.simpleicons.org/telegram | win,mac,linux | open | Клиент Telegram с открытым кодом для десктопа.
+Mattermost | https://github.com/mattermost/mattermost | https://cdn.simpleicons.org/mattermost | server,win,mac,linux | open | Командный мессенджер на своём сервере, как Slack.
+Jitsi Meet | https://github.com/jitsi/jitsi-meet | https://cdn.simpleicons.org/jitsi | web,server,win,mac,linux,android,ios | open | Видеозвонки в браузере без аккаунта и установки.
+Ferdium | https://github.com/ferdium/ferdium-app | https://github.com/ferdium.png?size=160 | win,mac,linux | open | Все мессенджеры и почты в одном окне.
+Vesktop | https://github.com/Vencord/Vesktop | https://github.com/Vencord.png?size=160 | win,mac,linux | open | Лёгкий клиент Discord со встроенными плагинами.
+Rocket.Chat | https://github.com/RocketChat/Rocket.Chat | https://github.com/RocketChat.png?size=160 | server,web,win,mac,linux,android,ios | open | Чат команды на своём сервере вместо Slack.
+Zulip | https://github.com/zulip/zulip | https://cdn.simpleicons.org/zulip | server,web,win,mac,linux,android,ios | open | Чат с обсуждениями по темам внутри каналов.
+Mumble | https://github.com/mumble-voip/mumble | https://cdn.simpleicons.org/mumble | win,mac,linux,android | open | Голосовой чат с низкой задержкой и своим сервером.
+Jami | https://jami.net/ | https://github.com/savoirfairelinux.png?size=160 | win,mac,linux,android,ios | open | Звонки и чат напрямую между устройствами, без центрального сервера.
+
+
+[Браузеры]
+Firefox | https://github.com/mozilla-firefox/firefox | https://cdn.simpleicons.org/firefox | win,mac,linux,android,ios | open | Независимый браузер с открытым кодом, расширениями и контейнерами.
+Thorium | https://github.com/Alex313031/Thorium | https://thorium.rocks/apple-touch-icon.png | win,mac,linux | open | Форк Chromium с оптимизациями и патчами приватности.
+Brave | https://github.com/brave/brave-browser | https://cdn.simpleicons.org/brave | win,mac,linux,android,ios | open | Chromium с блокировкой рекламы и трекеров из коробки.
+LibreWolf | https://librewolf.net/ | https://cdn.simpleicons.org/librewolf | win,mac,linux | open | Firefox с усиленной приватностью и без телеметрии.
+Ungoogled Chromium | https://github.com/ungoogled-software/ungoogled-chromium | https://github.com/ungoogled-software.png?size=160 | win,mac,linux | open | Chromium без сервисов Google и фоновых запросов.
+Zen Browser | https://github.com/zen-browser/desktop | https://cdn.simpleicons.org/zenbrowser | win,mac,linux | open | Firefox с вертикальными вкладками и рабочими пространствами.
+Vivaldi | https://vivaldi.com/ | https://cdn.simpleicons.org/vivaldi | win,mac,linux,android | free | Браузер с гибкой настройкой интерфейса, вкладками и заметками.
+Waterfox | https://github.com/BrowserWorks/Waterfox | https://github.com/BrowserWorks.png?size=160 | win,mac,linux | open | Firefox-форк с классическими расширениями и настройками.
+Floorp | https://github.com/Floorp-Projects/Floorp | https://cdn.simpleicons.org/floorp | win,mac,linux | open | Firefox-форк с вертикальными вкладками и рабочими пространствами.
+Mullvad Browser | https://github.com/mullvad/mullvad-browser | https://cdn.simpleicons.org/mullvad | win,mac,linux | open | Браузер для приватности, собранный вместе с Tor Project.
+qutebrowser | https://github.com/qutebrowser/qutebrowser | https://github.com/qutebrowser.png?size=160 | win,mac,linux | open | Браузер с управлением только с клавиатуры, как в vim.
+Cromite | https://github.com/uazo/cromite | - | android | open | Chromium для Android без рекламы и трекеров.
+Min | https://github.com/minbrowser/min | https://github.com/minbrowser.png?size=160 | win,mac,linux | open | Минималистичный браузер со вкладками и быстрым поиском.
+Chromium | https://github.com/chromium/chromium | https://github.com/chromium.png?size=160 | win,mac,linux | open | Открытый браузер, основа Chrome, Edge и многих других.
+
+[Разработка]
+VS Code | https://github.com/microsoft/vscode | https://code.visualstudio.com/assets/apple-touch-icon.png | win,mac,linux | open | Редактор кода с расширениями, отладкой и Git внутри.
+VSCodium | https://github.com/VSCodium/vscodium | https://cdn.simpleicons.org/vscodium | win,mac,linux | open | Сборка VS Code без телеметрии Microsoft.
+Windows Terminal | https://github.com/microsoft/terminal | https://raw.githubusercontent.com/microsoft/terminal/main/res/terminal.ico | win | open | Терминал с вкладками, профилями и настройкой шрифтов.
+Git | https://github.com/git/git | https://cdn.simpleicons.org/git | win,mac,linux | open | Система контроля версий. Основа для GitHub, GitLab и остальных.
+GitHub Desktop | https://github.com/desktop/desktop | https://github.com/desktop.png?size=160 | win,mac | open | Графический клиент Git для GitHub с историей и диффами.
+Neovim | https://github.com/neovim/neovim | https://cdn.simpleicons.org/neovim | win,mac,linux | open | Редактор на базе Vim с Lua, LSP и терминалом.
+Zed | https://github.com/zed-industries/zed | https://cdn.simpleicons.org/zedindustries | win,mac,linux | open | Быстрый редактор кода с совместным редактированием.
+DBeaver | https://github.com/dbeaver/dbeaver | https://cdn.simpleicons.org/dbeaver | win,mac,linux | open | Универсальный клиент к PostgreSQL, MySQL, SQLite и другим базам.
+WinMerge | https://github.com/WinMerge/winmerge | https://github.com/WinMerge.png?size=160 | win | open | Сравнение файлов и папок с подсветкой различий.
+Podman Desktop | https://github.com/podman-desktop/podman-desktop | https://cdn.simpleicons.org/podman | win,mac,linux | open | Контейнеры и Kubernetes без Docker Desktop.
+Insomnia | https://github.com/Kong/insomnia | https://cdn.simpleicons.org/insomnia | win,mac,linux | open | Тестирование HTTP, GraphQL и gRPC API.
+VirtualBox | https://www.virtualbox.org/ | https://cdn.simpleicons.org/virtualbox | win,mac,linux | open | Виртуальные машины для Windows, Linux и macOS.
+QEMU | https://github.com/qemu/qemu | https://cdn.simpleicons.org/qemu | win,mac,linux | open | Эмуляция и виртуализация разных архитектур.
+PowerShell | https://github.com/PowerShell/PowerShell | https://github.com/PowerShell.png?size=160 | win,mac,linux | open | Кроссплатформенная оболочка и язык автоматизации.
+Hoppscotch | https://github.com/hoppscotch/hoppscotch | https://cdn.simpleicons.org/hoppscotch | win,mac,linux,web | open | Клиент для HTTP, GraphQL и WebSocket в браузере и десктопе.
+Bruno | https://github.com/usebruno/bruno | https://raw.githubusercontent.com/usebruno/bruno/main/assets/images/logo.png | win,mac,linux | open | Клиент для HTTP и GraphQL. Коллекции хранятся файлами в Git.
+DB Browser for SQLite | https://github.com/sqlitebrowser/sqlitebrowser | https://raw.githubusercontent.com/sqlitebrowser/sqlitebrowser/master/images/logo.png | win,mac,linux | open | Просмотр и правка баз SQLite без SQL-консоли.
+DevToys | https://github.com/DevToys-app/DevToys | https://github.com/DevToys-app.png?size=160 | win,mac,linux | open | Десятки мелких утилит для разработчика в одном окне.
+CyberChef | https://github.com/gchq/CyberChef | https://github.com/gchq.png?size=160 | web,win,mac,linux | open | Кодирование, шифры и разбор данных в браузере.
+Alacritty | https://github.com/alacritty/alacritty | https://cdn.simpleicons.org/alacritty | win,mac,linux | open | Быстрый терминал на GPU с настройкой через файл.
+WezTerm | https://github.com/wezterm/wezterm | https://cdn.simpleicons.org/wezterm | win,mac,linux | open | Терминал с вкладками, сплитами и мультиплексором.
+Helix | https://github.com/helix-editor/helix | https://cdn.simpleicons.org/helix | win,mac,linux | open | Модальный редактор кода из коробки, без плагинов.
+OpenTofu | https://github.com/opentofu/opentofu | https://cdn.simpleicons.org/opentofu | win,mac,linux | open | Инфраструктура как код, открытый форк Terraform.
+HTTPie | https://github.com/httpie/desktop | https://cdn.simpleicons.org/httpie | win,mac,linux | open | Понятный клиент для HTTP-запросов с подсветкой.
+Emacs | https://github.com/emacs-mirror/emacs | https://github.com/emacs-mirror.png?size=160 | win,mac,linux | open | Редактор, который настраивается под любую задачу.
+Eclipse IDE | https://www.eclipse.org/eclipse/ | https://github.com/eclipse.png?size=160 | win,mac,linux | open | IDE для Java и C++ с большим набором плагинов.
+GitExtensions | https://github.com/gitextensions/gitextensions | https://github.com/gitextensions.png?size=160 | win | open | Графический Git для Windows с ветками, историей и диффами.
+pgAdmin | https://github.com/pgadmin-org/pgadmin4 | https://cdn.simpleicons.org/postgresql | win,mac,linux,web | open | Веб-интерфейс для PostgreSQL: запросы, схемы и бэкапы.
+k9s | https://github.com/derailed/k9s | https://github.com/derailed.png?size=160 | win,mac,linux | open | Терминальный интерфейс для Kubernetes: поды, логи и рестарты.
+Rancher Desktop | https://github.com/rancher-sandbox/rancher-desktop | https://cdn.simpleicons.org/rancher | win,mac,linux | open | Контейнеры и Kubernetes на компьютере без Docker Desktop.
+Ansible | https://github.com/ansible/ansible | https://cdn.simpleicons.org/ansible | linux,mac,server | open | Настройка серверов кодом, без агентов на машинах.
+Scoop | https://github.com/ScoopInstaller/Scoop | https://github.com/ScoopInstaller.png?size=160 | win | open | Менеджер пакетов для Windows из командной строки.
+Homebrew | https://github.com/Homebrew/brew | https://cdn.simpleicons.org/homebrew | mac,linux | open | Менеджер пакетов для macOS и Linux.
+Tabby | https://github.com/Eugeny/tabby | https://github.com/Eugeny.png?size=160 | win,mac,linux,web | open | Терминал с вкладками и SSH-подключениями.
+Swagger Editor | https://github.com/swagger-api/swagger-editor | https://cdn.simpleicons.org/swagger | web,win,mac,linux | open | Редактор OpenAPI с проверкой спецификации и превью.
+Zeal | https://github.com/zealdocs/zeal | https://github.com/zealdocs.png?size=160 | win,linux | open | Офлайн-документация по API и языкам с мгновенным поиском.
+tad | https://github.com/antonycourtney/tad | https://github.com/antonycourtney.png?size=160 | win,mac,linux | open | Просмотр CSV и Parquet со сводными таблицами и графиками.
+Nativefier | https://github.com/nativefier/nativefier | https://github.com/nativefier.png?size=160 | win,mac,linux | open | Превращает любой сайт в десктопное приложение.
+code-server | https://github.com/coder/code-server | https://github.com/coder.png?size=160 | server,web | open | VS Code в браузере на своём сервере.
+Weblate | https://github.com/WeblateOrg/weblate | https://github.com/WeblateOrg.png?size=160 | server,web | open | Переводы ПО с интеграцией Git и проверкой правок.
+Judge0 | https://github.com/judge0/judge0 | https://github.com/judge0.png?size=160 | server | open | API для компиляции и запуска кода в песочнице.
+Langfuse | https://github.com/langfuse/langfuse | https://github.com/langfuse.png?size=160 | server,web | open | Трассировка LLM-приложений и управление промптами.
+
+[Локальный AI]
+Ollama | https://github.com/ollama/ollama | https://cdn.simpleicons.org/ollama | win,mac,linux | open | Запуск локальных LLM одной командой. Есть API и модели сообщества.
+Jan | https://github.com/menloresearch/jan | https://raw.githubusercontent.com/menloresearch/jan/main/src-tauri/icons/icon.png | win,mac,linux | open | Чат с локальными моделями в офлайне. Без аккаунта.
+GPT4All | https://github.com/nomic-ai/gpt4all | https://github.com/nomic-ai.png?size=160 | win,mac,linux | open | Локальный чат с моделями на CPU и GPU. Работает без интернета.
+Open WebUI | https://github.com/open-webui/open-webui | https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png | server,win,mac,linux | open | Веб-интерфейс для Ollama и OpenAI API с чатами и RAG.
+ComfyUI | https://github.com/comfyanonymous/ComfyUI | https://www.comfy.org/favicon-96x96.png | win,mac,linux | open | Нодовый интерфейс для генерации изображений и видео.
+Stable Diffusion WebUI | https://github.com/AUTOMATIC1111/stable-diffusion-webui |  | win,mac,linux | open | Классический веб-интерфейс для Stable Diffusion.
+LM Studio | https://lmstudio.ai/ | https://cdn.simpleicons.org/lmstudio | win,mac,linux | free | GUI для локальных моделей: каталог, чат и сервер.
+AnythingLLM | https://github.com/Mintplex-Labs/anything-llm | https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/frontend/public/favicon.png | win,mac,linux | open | Чат с документами и локальными моделями, RAG из коробки.
+llama.cpp | https://github.com/ggml-org/llama.cpp | https://github.com/ggml-org.png?size=160 | win,mac,linux | open | Запуск LLM на CPU и GPU без Python и лишних зависимостей.
+InvokeAI | https://github.com/invoke-ai/InvokeAI | https://github.com/invoke-ai.png?size=160 | win,mac,linux | open | Генерация изображений с холстом, слоями и своими моделями.
+SillyTavern | https://github.com/SillyTavern/SillyTavern | https://github.com/SillyTavern.png?size=160 | win,mac,linux | open | Интерфейс для чата с локальными моделями и персонажами.
+whisper.cpp | https://github.com/ggml-org/whisper.cpp | https://github.com/ggml-org.png?size=160 | win,mac,linux | open | Распознавание речи локально, без облака и Python.
+Fooocus | https://github.com/lllyasviel/Fooocus | - | win,mac,linux | open | Генерация картинок в два клика на своём компьютере.
+LocalAI | https://github.com/mudler/LocalAI | - | win,mac,linux | open | Свой сервер с API как у OpenAI: текст, картинки, звук.
+Unsloth | https://github.com/unslothai/unsloth | https://github.com/unslothai.png?size=160 | win,mac,linux | open | Локальный интерфейс для запуска и дообучения LLM.
+Text Generation WebUI | https://github.com/oobabooga/text-generation-webui | https://github.com/oobabooga.png?size=160 | win,mac,linux | open | Чат с локальными моделями через браузер, загрузка GGUF.
+Langflow | https://github.com/langflow-ai/langflow | https://github.com/langflow-ai.png?size=160 | win,mac,linux,server | open | Визуальный конструктор цепочек и агентов на LLM.
+
+[Серверы и self-hosted]
+Jellyfin | https://jellyfin.org/ | - | server,win,mac,linux,android,ios | open | Медиа-сервер с поддержкой всех форматов.
+Immich | https://immich.app/ | - | server,android,ios | open | Фото- и видеогалерея с AI-поиском и автоматическим бэкапом.
+Home Assistant | https://home-assistant.io/ | - | server,android,ios | open | Умный дом: автоматизация, интеграции, локальное управление.
+Pi-hole | https://pi-hole.net/ | - | server | open | DNS-блокировщик рекламы и трекеров для всей сети.
+AdGuard Home | https://adguardhome.app/ | - | server,win,mac,linux | open | DNS-сервер с фильтрацией рекламы и родительским контролем.
+Proxmox VE | https://proxmox.com/ | - | server | open | Виртуализация и контейнеры на Debian с веб-панелью.
+TrueNAS | https://www.truenas.com/ | - | server | open | Сетевое хранилище на ZFS: снимки, репликация, общий доступ.
+Portainer | https://portainer.io/ | - | server | open | Веб-панель для Docker и Kubernetes.
+Uptime Kuma | https://uptimekuma.com/ | - | server | open | Мониторинг сайтов и сервисов с уведомлениями.
+Forgejo | https://forgejo.org/ | - | server,win,mac,linux | open | Git-сервер с issues, CI и пакетами. Открытый форк Gitea.
+Navidrome | https://navidrome.org/ | - | server | open | Свой музыкальный сервер с веб-плеером и приложениями.
+Audiobookshelf | https://audiobookshelf.org/ | - | server,android,ios | open | Аудиокниги и подкасты с прогрессом прослушивания.
+Actual Budget | https://actualbudget.app/ | - | server,win,mac,linux,web | open | Бюджет и учёт расходов на своём сервере.
+Firefly III | https://fireflyiii.org/ | - | server | open | Учёт личных финансов с правилами и отчётами.
+Coolify | https://coollabs.io/coolify/ | - | server | open | Свой аналог Vercel и Heroku: деплой из Git в пару кликов.
+OpenMediaVault | https://www.openmediavault.org/ | - | server | open | NAS из обычного компьютера: диски, SMB, Docker.
+Homepage | https://gethomepage.dev/ | - | server | open | Стартовая страница со ссылками на все сервисы дома.
+Nextcloud | https://github.com/nextcloud/server | https://cdn.simpleicons.org/nextcloud | server,win,mac,linux,android,ios | open | Облако на своём сервере: файлы, календарь, контакты, офис.
+Gitea | https://github.com/go-gitea/gitea | https://cdn.simpleicons.org/gitea | server,win,mac,linux | open | Лёгкий Git-сервер с веб-интерфейсом и CI.
+Grafana | https://github.com/grafana/grafana | https://cdn.simpleicons.org/grafana | server | open | Дашборды и графики для метрик и логов.
+Caddy | https://github.com/caddyserver/caddy | https://cdn.simpleicons.org/caddy | server | open | Веб-сервер с автоматическим HTTPS и простым конфигом.
+Vaultwarden | https://github.com/dani-garcia/vaultwarden | https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon.svg | server | open | Сервер паролей, совместимый с клиентами Bitwarden.
+Nginx Proxy Manager | https://github.com/NginxProxyManager/nginx-proxy-manager | https://raw.githubusercontent.com/NginxProxyManager/nginx-proxy-manager/master/frontend/public/images/favicon/android-chrome-192x192.png | server | open | Обратный прокси с HTTPS и панелью управления.
+Paperless-ngx | https://github.com/paperless-ngx/paperless-ngx | https://github.com/paperless-ngx.png?size=160 | server | open | Домашний архив документов с OCR и поиском.
+n8n | https://github.com/n8n-io/n8n | https://cdn.simpleicons.org/n8n | server,web | open | Автоматизация и интеграции между сервисами на своём сервере.
+Netdata | https://github.com/netdata/netdata | https://cdn.simpleicons.org/netdata | server,linux | open | Метрики сервера в реальном времени с живой панелью.
+Appwrite | https://github.com/appwrite/appwrite | https://cdn.simpleicons.org/appwrite | server | open | Бэкенд для приложений: база, вход, хранилище и функции.
+Prometheus | https://github.com/prometheus/prometheus | https://cdn.simpleicons.org/prometheus | server | open | Сбор метрик и запросы к ним на PromQL.
+Traefik | https://github.com/traefik/traefik | https://github.com/traefik.png?size=160 | server | open | Реверс-прокси с автоматическим HTTPS и discovery сервисов.
+Synapse | https://github.com/element-hq/synapse | https://cdn.simpleicons.org/element | server | open | Сервер Matrix для своего чата с федерацией.
+ntfy | https://github.com/binwiederhier/ntfy | https://github.com/binwiederhier.png?size=160 | server,web,android,ios | open | Пуш-уведомления через обычный HTTP-запрос.
+changedetection.io | https://github.com/dgtlmoon/changedetection.io | https://github.com/dgtlmoon.png?size=160 | server,web | open | Следит за страницами и сообщает, когда что-то изменилось.
+PhotoPrism | https://github.com/photoprism/photoprism | https://github.com/photoprism.png?size=160 | server,web | open | Фотоархив с поиском по людям, местам и тегам.
+Mealie | https://github.com/hay-kot/mealie | https://github.com/hay-kot.png?size=160 | server,web | open | Рецепты и список покупок на своём сервере.
+Grocy | https://github.com/grocy/grocy | https://github.com/grocy.png?size=160 | server,web | open | Учёт еды, сроков годности и домашних мелочей.
+BookStack | https://github.com/BookStackApp/BookStack | https://github.com/BookStackApp.png?size=160 | server,web | open | Вики в виде книг и глав, без сложной разметки.
+PocketBase | https://github.com/pocketbase/pocketbase | https://github.com/pocketbase.png?size=160 | server | open | Один файл вместо бэкенда: база, авторизация и API.
+Plausible Analytics | https://github.com/plausible/analytics | https://cdn.simpleicons.org/plausibleanalytics | server,web | open | Аналитика сайта без куки и личных данных.
+Matomo | https://github.com/matomo-org/matomo | https://cdn.simpleicons.org/matomo | server,web | open | Аналитика на своём сервере вместо Google Analytics.
+MyIP | https://github.com/jason5ng32/MyIP | https://github.com/jason5ng32.png?size=160 | server,web | open | IP, DNS-утечки, WebRTC и скорость сети в одном интерфейсе.
+MySpeed | https://github.com/gnmyt/myspeed | https://github.com/gnmyt.png?size=160 | server | open | График скорости интернета за последние 30 дней.
+NetAlertX | https://github.com/netalertx/NetAlertX | https://github.com/netalertx.png?size=160 | server | open | Сканирует сеть и сообщает о появлении новых устройств.
+Speedtest Tracker | https://github.com/alexjustesen/speedtest-tracker | https://github.com/alexjustesen.png?size=160 | server | open | Следит за скоростью и доступностью интернета.
+UpSnap | https://github.com/seriousm4x/UpSnap | https://github.com/seriousm4x.png?size=160 | server,web | open | Включает компьютеры по Wake-on-LAN из браузера.
+HedgeDoc | https://github.com/hedgedoc/hedgedoc | https://github.com/hedgedoc.png?size=160 | server,web | open | Markdown-документы, которые правят несколько человек одновременно.
+Blinko | https://github.com/blinkospace/blinko | https://github.com/blinkospace.png?size=160 | server,web | open | Заметки с поиском и AI-функциями на своём сервере.
+flatnotes | https://github.com/dullage/flatnotes | https://github.com/dullage.png?size=160 | server,web | open | Заметки в обычных Markdown-файлах, без базы данных.
+SilverBullet | https://github.com/silverbulletmd/silverbullet | https://github.com/silverbulletmd.png?size=160 | server,web | open | Заметки и страницы с расширениями на JavaScript.
+CryptPad | https://github.com/cryptpad/cryptpad | https://github.com/cryptpad.png?size=160 | server,web | open | Документы и таблицы со сквозным шифрованием.
+Etherpad | https://github.com/ether/etherpad | https://github.com/ether.png?size=160 | server,web | open | Совместное редактирование текста в реальном времени.
+Grist | https://github.com/gristlabs/grist-core | https://github.com/gristlabs.png?size=160 | server,web | open | Таблицы со связями и формулами вместо Airtable.
+Passbolt | https://github.com/passbolt/passbolt_api | https://github.com/passbolt.png?size=160 | server,web | open | Пароли команды с общим доступом и шифрованием.
+PrivateBin | https://github.com/PrivateBin/PrivateBin | https://github.com/PrivateBin.png?size=160 | server,web | open | Pastebin, сервер не видит содержимое записей.
+Opengist | https://github.com/thomiceli/opengist | https://github.com/thomiceli.png?size=160 | server,web | open | Сниппеты с историей изменений на базе Git.
+Dashy | https://github.com/lissy93/dashy | https://github.com/lissy93.png?size=160 | server,web | open | Стартовая страница домашнего сервера, настройка через YAML.
+Glance | https://github.com/glanceapp/glance | https://github.com/glanceapp.png?size=160 | server,web | open | Дашборд с лентами, погодой и ссылками на сервисы.
+Heimdall | https://github.com/linuxserver/Heimdall | https://github.com/linuxserver.png?size=160 | server,web | open | Панель со всеми сервисами домашнего сервера.
+Homer | https://github.com/homer-dashboard/homer | https://github.com/homer-dashboard.png?size=160 | server,web | open | Статичная homepage со ссылками и проверкой доступности.
+LibrePhotos | https://github.com/LibrePhotos/librephotos | https://github.com/LibrePhotos.png?size=160 | server,web | open | Фотоархив с поиском и распознаванием лиц.
+Lychee | https://github.com/LycheeOrg/Lychee | https://github.com/LycheeOrg.png?size=160 | server,web | open | Галерея фотографий с альбомами и сетками.
+Photoview | https://github.com/photoview/photoview | https://github.com/photoview.png?size=160 | server,web | open | Просмотр больших фотографий с папками и оригиналами.
+Piwigo | https://github.com/Piwigo/Piwigo | https://github.com/Piwigo.png?size=160 | server,web | open | Фотогалерея для сайта с темами и плагинами.
+Meilisearch | https://github.com/meilisearch/meilisearch | https://github.com/meilisearch.png?size=160 | server | open | Быстрый поиск с исправлением опечаток и фильтрами.
+SearXNG | https://github.com/searxng/searxng | https://github.com/searxng.png?size=160 | server,web | open | Метапоисковик без рекламы и слежки, на своём сервере.
+Typesense | https://github.com/typesense/typesense | https://github.com/typesense.png?size=160 | server | open | Поиск по сайту с исправлением ошибок в запросе.
+YunoHost | https://github.com/YunoHost/yunohost | https://github.com/YunoHost.png?size=160 | server | open | ОС для домашнего сервера с установкой сервисов в пару кликов.
+DietPi | https://github.com/MichaIng/DietPi | https://github.com/MichaIng.png?size=160 | server | open | Лёгкая Debian для одноплатников и домашнего сервера.
+Tipi | https://github.com/runtipi/runtipi | https://github.com/runtipi.png?size=160 | server | open | Домашний сервер с установкой приложений в один клик.

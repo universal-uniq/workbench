@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Верстак — каталог полезных программ</title>
+<meta name="description" content="Каталог полезных программ для Windows, Linux и macOS. Ссылки ведут на официальные сайты и GitHub-репозитории.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#12100d">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="assets/theme-init.js"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#list">К списку программ</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="26" height="4" rx="1"/>
+          <path d="M6.5 15v13M25.5 15v13M6.5 22.5h19"/>
+          <rect x="12" y="4.5" width="8" height="6.5" rx="1"/>
+          <path d="M14.5 4.5V3h3v1.5"/>
+        </svg>
+      </span>
+      <div class="brand-text">
+        <p class="hero-eyebrow">Каталог полезных программ</p>
+        <h1>Верстак</h1>
+        <p class="tagline">Полезные программы для Windows, Linux и macOS. Ссылка — на официальный сайт или GitHub-репозиторий.</p>
+      </div>
+    </div>
+    <div class="head-meta">
+      <span class="counter" id="total" aria-live="polite">Загрузка…</span>
+      <span class="accents" id="accents">
+        <button class="swatch" type="button" data-accent="#a8441f" aria-pressed="true" aria-label="Цвет: терракота" title="Терракота" style="--c:#a8441f"></button>
+        <button class="swatch" type="button" data-accent="#2b5d8a" aria-label="Цвет: синева" title="Синева" style="--c:#2b5d8a"></button>
+        <button class="swatch" type="button" data-accent="#6a4b8f" aria-label="Цвет: фиолет" title="Фиолет" style="--c:#6a4b8f"></button>
+        <button class="swatch" type="button" data-accent="#2f6b46" aria-label="Цвет: зелень" title="Зелень" style="--c:#2f6b46"></button>
+        <button class="icon-btn swatch-custom" type="button" aria-label="Свой цвет">
+          <input type="color" id="accent-custom" value="#a8441f">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.4"/><path d="M12 2.5v2.7M12 18.8v2.7M2.5 12h2.7M18.8 12h2.7M4.9 4.9l1.9 1.9M17.2 17.2 19 19M19 4.9l-1.9 1.9M6.8 17.2 5 19" stroke-width="1.7"/></svg>
+        </button>
+      </span>
+      <button class="icon-btn" id="glass" type="button" aria-pressed="false" aria-label="Жидкие карточки" title="Жидкие карточки">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="13" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="6.2" y="8.2" width="11.6" height="6.6" rx="2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.5"/></svg>
+      </button>
+      <button class="icon-btn" id="theme" type="button" aria-label="Переключить тему" title="Светлая или тёмная тема">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <div class="wrap">
+    <nav class="view-tabs" id="view-tabs" aria-label="Разделы">
+      <div class="wrap">
+        <button class="view-tab" data-view="programs" type="button" aria-pressed="true">Программы</button>
+        <button class="view-tab" data-view="prompts" type="button" aria-pressed="false">ИИ-промпты</button>
+      </div>
+    </nav>
+    <div class="controls">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M15.8 15.8L21 21"/></svg>
+        <input id="q" type="search" placeholder="Найти программу, например «архиватор» или «VPN»" autocomplete="off" spellcheck="false" aria-label="Поиск по каталогу">
+        <kbd>/</kbd>
+      </label>
+      <span id="oss-wrap">
+        <button class="filter-btn" id="oss" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7L4 12l5 5M15 7l5 5-5 5"/></svg>
+          Только открытый код
+        </button>
+      </span>
+    </div>
+    <div class="cats-row" id="cats-row">
+      <button class="cats-btn prev" id="cats-prev" type="button" aria-label="Прокрутить категории влево">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5L9 12l5.5 5.5"/></svg>
+      </button>
+      <nav class="cats" id="cats" aria-label="Категории"></nav>
+      <button class="cats-btn next" id="cats-next" type="button" aria-label="Прокрутить категории вправо">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6.5L15 12l-5.5 5.5"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+  <div id="list"></div>
+
+  <div class="empty" id="empty" hidden>
+    <p class="empty-title">Ничего не нашлось</p>
+    <p class="empty-text">Попробуйте другое слово или сбросьте фильтры.</p>
+    <button class="reset" id="reset" type="button">Сбросить фильтры</button>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-col">
+      <p class="foot-title">Как добавить программу</p>
+      <p>Все данные лежат в <a href="source.txt">source.txt</a> и <a href="source-prompts.txt">source-prompts.txt</a> — файлы, которые нужно править. Добавьте строку в нужную категорию:</p>
+      <code class="example">Название | https://ссылка | https://логотип.png | win,linux | open | Короткое описание.</code>
+      <p class="foot-note">Платформы: <b>win, mac, linux, web, android, ios, server, any</b>. Лицензия: <b>open, free, freemium, paid, guide</b>. Логотип можно оставить пустым или поставить <b>-</b> — сайт нарисует буквы. Изменения появятся после обновления страницы.</p>
+    </div>
+    <div class="foot-col foot-right">
+      <p class="foot-title">О каталоге</p>
+      <p>Сайт не хранит и не раздаёт файлы программ. Только ссылки на официальные источники.</p>
+      <p>Собрано <span id="foot-count">—</span> программ в <span id="foot-cats">—</span> категориях.</p>
+      <p class="foot-note">Статический сайт для GitHub Pages. Без аналитики и трекеров.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
