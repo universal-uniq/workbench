@@ -560,6 +560,8 @@
 
   function applyTheme(theme) {
     root.dataset.theme = theme === 'light' ? 'light' : 'dark';
+    const themeSel = document.getElementById('theme-select');
+    if (themeSel) themeSel.value = root.dataset.theme;
   }
 
   function applyLiquid(liquid) {
@@ -587,11 +589,14 @@
     if (!storedTheme()) applyTheme(e.matches ? 'dark' : 'light');
   });
 
-  $('#theme').addEventListener('click', () => {
-    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    applyTheme(next);
-    try { localStorage.setItem('polka-theme', next); } catch (_) { /* ignore */ }
-  });
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.addEventListener('change', () => {
+      const next = themeSelect.value === 'light' ? 'light' : 'dark';
+      applyTheme(next);
+      try { localStorage.setItem('polka-theme', next); } catch (_) { /* ignore */ }
+    });
+  }
 
   $('#glass').addEventListener('click', () => {
     state.liquid = !state.liquid;
