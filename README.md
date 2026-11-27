@@ -14,8 +14,6 @@ assets/theme-init.js        тема и акцент до первой отри�
 assets/favicon.svg          иконка сайта
 source.txt                  359 программ в 20 разделах
 source-prompts.txt          15 промптов в 6 категориях
-.github/workflows/pages.yml деплой на GitHub Pages
-.github/dependabot.yml      обновление версий GitHub Actions
 .nojekyll                   отключает обработку Jekyll
 ```
 
