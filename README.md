@@ -3,9 +3,9 @@
 Статический каталог полезных программ для Windows, Linux и macOS. Работает на GitHub Pages: без сборки, без фреймворков, без аналитики.
 
 Github Pages
-https://universal-uniq.github.io/workbench/
+https://universal-uniq.github.io/workbench
 Vercel
-https://workbench-healthy.vercel.app/
+https://workbench-healthy.vercel.app
 
 Сайт читает два текстовых файла и строит карточки на странице: `source.txt` (программы) и `source-prompts.txt` (промпты). Ссылки ведут на официальные сайты и репозитории проектов.
 
